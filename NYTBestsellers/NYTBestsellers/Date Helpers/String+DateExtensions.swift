@@ -12,7 +12,7 @@ extension String {
   // create a formatted date from ISO
   // e.g "MMM d, yyyy hh:mm a"
   // e.g usage addedAt.formattedDate("MMM d, yyyy")
-  public func formatISODateString(dateFormat: String) -> String {
+  public func formattedDate(dateFormat: String) -> String {
     var formatDate = self
     let isoDateFormatter = ISO8601DateFormatter()
     if let date = isoDateFormatter.date(from: self) {
